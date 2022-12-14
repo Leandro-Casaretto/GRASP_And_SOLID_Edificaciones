@@ -17,7 +17,7 @@ namespace Full_GRASP_And_SOLID.Library
                 Console.WriteLine($"{task.Quantity} de '{task.Material.Description}' " +
                     $"usando '{task.Equipment.Description}' durante {task.Time}");
             }
-            Console.WriteLine($"El costo total  es: ${building.GetProductionCost()}");
+            Console.WriteLine($"El costo es de: ${building.GetProductionCost()}");
         }
     }
 }

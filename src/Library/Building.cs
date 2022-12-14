@@ -20,7 +20,6 @@ namespace Full_GRASP_And_SOLID.Library
         {
             return tasks;
         }
-
         public double FinalCost { get; set; }
 
         public Supply FinalSupply { get; set; }
@@ -59,6 +58,17 @@ namespace Full_GRASP_And_SOLID.Library
             }
             double totalCost = materialCost + toolCost;
 
+            if (tasks.Count == 0)
+            {
+                throw new Empty("ERROR. NO EXSISTEN TAREAS");
+            }
+            
+            /// <summary>
+            /// -------------EN CASO DE QUE SEA CON LA OTRA HORA----------------
+            /// double totalCost = task.Material.UnitCost * task.Quantity / 1000 
+            /// + (task.Time/3600*(task.Equipment.HourlyCost));
+            /// </summary>
+            
             return totalCost;
         }
 

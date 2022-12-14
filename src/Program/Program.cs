@@ -21,6 +21,10 @@ namespace Full_GRASP_And_SOLID
         {
             PopulateCatalogs();
 
+            /// <summary>
+            /// Instanciamos el edificio y el printer
+            /// </summary>
+            
             Building tower = new Building("Tower");
             Printer printer = new Printer();
 
