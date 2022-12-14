@@ -11,7 +11,7 @@ namespace Full_GRASP_And_SOLID.Library
     {
         public void PrintBuilding (Building building)
         {
-            Console.WriteLine($"Edificio: {building.Description}:");
+            Console.WriteLine($"Edificio: {building.Description}");
             foreach (Task task in building.getTasks())
             {
                 Console.WriteLine($"{task.Quantity} de '{task.Material.Description}' " +
