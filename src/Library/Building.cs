@@ -13,6 +13,9 @@ namespace Full_GRASP_And_SOLID.Library
     {
         private ArrayList tasks = new ArrayList();
 
+        /// <summary>
+        /// Devolvemos las tasks
+        /// </summary>
         public ArrayList getTasks()
         {
             return tasks;
@@ -20,7 +23,7 @@ namespace Full_GRASP_And_SOLID.Library
 
         public double FinalCost { get; set; }
 
-        public Supply Supply { get; set; }
+        public Supply FinalSupply { get; set; }
 
         public Building(string name)
         {
@@ -39,10 +42,15 @@ namespace Full_GRASP_And_SOLID.Library
             this.tasks.Remove(task);
         }
 
+        /// <summary>
+        /// Creamos método GetProductionCost
+        /// Al ser Building la clase experta en información, le asignamos la responsabilidad de
+        /// calcular el costo (Patrón Expert)
+        /// </summary>
         public double GetProductionCost()
         {
-            double materialCost = 0;
-            double toolCost = 0;
+            double materialCost = 0;   /// Costo de materiales
+            double toolCost = 0;       /// Costo de herramientas
             
             foreach (Task task in this.tasks)
             {

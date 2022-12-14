@@ -4,6 +4,25 @@
         <name>Library</name>
     </assembly>
     <members>
+        <member name="M:Full_GRASP_And_SOLID.Library.Building.getTasks">
+            <summary>
+            Devolvemos las tasks
+            </summary>
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.Building.GetProductionCost">
+            <summary>
+            Creamos método GetProductionCost
+            Al ser Building la clase experta en información, le asignamos la responsabilidad de
+            calcular el costo (Patrón Expert)
+            </summary>
+        </member>
+        <member name="T:Full_GRASP_And_SOLID.Library.Printer">
+            <summary>
+            La siguiente clase es la encargada de imprimir en consola. Al crear esta clase, le quitamos la
+            responsabilidad a Building de hacerlo, lo cual evita tener que cambiar esa clase cada vez
+            que querramos hacer un cambio en la manera de imprimir. (Principio utilizado: SRP)
+            </summary>
+        </member>
         <member name="T:ClassLibrary.Train">
             <summary>
             Esta clase representa un tren muy básico.
