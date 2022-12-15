@@ -1,8 +1,3 @@
-//--------------------------------------------------------------------------------
-// <copyright file="TrainTests.cs" company="Universidad Católica del Uruguay">
-//     Copyright (c) Programación II. Derechos reservados.
-// </copyright>
-//--------------------------------------------------------------------------------
 using System;
 using System.Linq;
 using System.Collections;
@@ -11,8 +6,14 @@ using Full_GRASP_And_SOLID.Library;
 
 namespace Tests
 {
-    public class Test1
+    public class Test
     {
+
+        [SetUp]
+        public void Setup()
+        {
+        }
+
         private static ArrayList supplyCatalog = new ArrayList();
         private static ArrayList toolCatalog = new ArrayList();
         
@@ -189,9 +190,7 @@ namespace Tests
             {
                 Assert.Fail();
             }
-        }
-
-        
+        }      
 
     }    
 }

@@ -24,5 +24,10 @@
             Realizamos el Test del supply final (null)
             </summary>
         </member>
+        <member name="M:Tests.Test1.ExceptionTest">
+            <summary>
+            Testeamos la excepcion Empty (la cual intervendrá cuando no se encuentren tasks.)
+            </summary>
+        </member>
     </members>
 </doc>
