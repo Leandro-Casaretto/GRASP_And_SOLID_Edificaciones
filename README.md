@@ -66,11 +66,11 @@ public class Printer
     }
 ```
 ## Test realizados
-➡️ ProductionCostTest : Testea nuestro método GetProductionCost()
-➡️ DescriptionTest:  Testea si la descripción es la correcta (para no testear todos los datos)
-➡️ TaskTest  : Testea las tasks
-➡️ FinalSupply: Testea el supply final (null)
-➡️ ExceptionTest: Testea la excepción que creamos
+-➡️ ProductionCostTest : Testea nuestro método GetProductionCost()
+-➡️ DescriptionTest:  Testea si la descripción es la correcta (para no testear todos los datos)
+-➡️ TaskTest  : Testea las tasks
+-➡️ FinalSupply: Testea el supply final (null)
+-➡️ ExceptionTest: Testea la excepción que creamos
 
 
 
