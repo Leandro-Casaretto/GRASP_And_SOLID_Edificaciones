@@ -184,11 +184,11 @@ namespace Tests
             try
             {
                 printer.PrintBuilding(tower);
-                Assert.Pass();
+                Assert.Fail();
             }
             catch(Empty)
             {
-                Assert.Fail();
+                Assert.Pass();
             }
         }      
 

@@ -4,27 +4,27 @@
         <name>LibraryTests</name>
     </assembly>
     <members>
-        <member name="M:Tests.Test1.ProductionCostTest">
+        <member name="M:Tests.Test.ProductionCostTest">
             <summary>
             Realizamos el Test del método creado GetProductionCost
             </summary>
         </member>
-        <member name="M:Tests.Test1.DescriptionTest">
+        <member name="M:Tests.Test.DescriptionTest">
             <summary>
             Realizamos el Test de la descripción del edificio
             </summary>
         </member>
-        <member name="M:Tests.Test1.TaskTest">
+        <member name="M:Tests.Test.TaskTest">
             <summary>
             Realizamos el Test de las Tasks
             </summary>
         </member>
-        <member name="M:Tests.Test1.FinalSupply">
+        <member name="M:Tests.Test.FinalSupply">
             <summary>
             Realizamos el Test del supply final (null)
             </summary>
         </member>
-        <member name="M:Tests.Test1.ExceptionTest">
+        <member name="M:Tests.Test.ExceptionTest">
             <summary>
             Testeamos la excepcion Empty (la cual intervendrá cuando no se encuentren tasks.)
             </summary>
