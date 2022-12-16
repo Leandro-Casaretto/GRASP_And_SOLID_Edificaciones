@@ -26,13 +26,24 @@ namespace Full_GRASP_And_SOLID
             /// </summary>
             
             Building tower = new Building("Tower");
-            Printer printer = new Printer();
 
             tower.AddTask(new Task(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120));
             tower.AddTask(new Task(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120));
             tower.AddTask(new Task(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15));
             
+            /// <summary>
+            /// Ahora, para la implementación en Program lo que hicimos fue, a partir de la interfaz,
+            /// instanciar tanto la impresión en consola como la impresion en archivo.
+            /// </summary>
+
+            IPrinter printer;
+
+            printer = new ConsolePrinter();
             printer.PrintBuilding(tower);
+
+            printer = new FilePrinter();
+            printer.PrintBuilding(tower);
+
         }
 
         private static void PopulateCatalogs()

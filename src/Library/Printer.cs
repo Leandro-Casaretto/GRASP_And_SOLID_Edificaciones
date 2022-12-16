@@ -9,15 +9,9 @@ namespace Full_GRASP_And_SOLID.Library
     /// </summary>
     public class Printer
     {
-        public void PrintBuilding (Building building)
+        public void PrintBuilding(Building building)
         {
-            Console.WriteLine($"Edificio: {building.Description}");
-            foreach (Task task in building.getTasks())
-            {
-                Console.WriteLine($"{task.Quantity} de '{task.Material.Description}' " +
-                    $"usando '{task.Equipment.Description}' durante {task.Time}");
-            }
-            Console.WriteLine($"El costo es de: ${building.GetProductionCost()}");
+            Console.WriteLine(building.GetTextToPrint());
         }
     }
 }
