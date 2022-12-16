@@ -178,17 +178,18 @@ namespace Tests
         [Test]
         public void ExceptionTest()
         {
-            Building tower = new Building("Tower");
+            Building tower = new Building("");
             Printer printer = new Printer();
             
             try
             {
                 printer.PrintBuilding(tower);
-                Assert.Pass();
+                Assert.Fail();
             }
+            
             catch(Empty)
             {
-                Assert.Fail();
+                Assert.Pass();
             }
         }      
 
