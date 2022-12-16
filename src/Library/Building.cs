@@ -71,6 +71,21 @@ namespace Full_GRASP_And_SOLID.Library
             
             return totalCost;
         }
+        public string GetTextToPrint()
+        {
+            string result = $"Edificio {this.Description}:\n";
+            foreach (Task task in this.tasks)
+            {
+                result = result +
+                    $"{task.Quantity} de '{task.Material.Description}' " +
+                    $"usando '{task.Equipment.Description}' durante {task.Time}\n";
+            }
+
+            // Agregado por Expert
+            result = result + $"Costo: {this.GetProductionCost()}";
+
+            return result;
+        }
 
     }
 }
