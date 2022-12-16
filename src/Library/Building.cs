@@ -31,8 +31,17 @@ namespace Full_GRASP_And_SOLID.Library
 
         public string Description { get; set; }
 
-        public void AddTask(Task task)
+        /// <summary>
+        /// Modificando el método AddTask, logramos que la clase Building tenga el control de todas
+        /// las tasks(le agregamos la responsabilidad de agregarlas), por lo cual estamos 
+        /// hablando de una composición. Con todo esto nos aseguramos de que cuando se quieran agregar tasks
+        /// al building, sea este el mismo que las crea.
+        /// 
+        /// </summary>
+        public void AddTask(Supply material, double quantity, Tool equipment, int time)
         {
+            Task task = new Task(material, quantity, equipment, time);
+
             this.tasks.Add(task);
         }
 

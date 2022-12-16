@@ -22,14 +22,19 @@ namespace Full_GRASP_And_SOLID
             PopulateCatalogs();
 
             /// <summary>
-            /// Instanciamos el edificio y el printer
+            /// Instanciamos el edificio
             /// </summary>
             
             Building tower = new Building("Tower");
 
-            tower.AddTask(new Task(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120));
-            tower.AddTask(new Task(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120));
-            tower.AddTask(new Task(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15));
+            /// <summary>
+            /// Como aplicamos el patrón Creator, ahora es el building (tower) el encargado de crear
+            /// los objetos, es decir, no permitimos que "Tower" reciba objetos creados. 
+            /// </summary>
+
+            tower.AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
             
             /// <summary>
             /// Ahora, para la implementación en Program lo que hicimos fue, a partir de la interfaz,
