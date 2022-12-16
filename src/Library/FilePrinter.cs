@@ -4,7 +4,7 @@ namespace Full_GRASP_And_SOLID.Library
 {
     /// <summary>
     /// Independizamos el poder imprimir en archivos, creando la clase FilePrinter, que hereda de la interfaz
-    /// IPrinter. (Patrón utilizado: Polimorfismo)
+    /// IPrinter (Patrón utilizado: Polimorfismo).
     /// </summary>
     public class FilePrinter : IPrinter
     {

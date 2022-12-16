@@ -9,6 +9,15 @@
             Devolvemos las tasks
             </summary>
         </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.Building.AddTask(Full_GRASP_And_SOLID.Library.Supply,System.Double,Full_GRASP_And_SOLID.Library.Tool,System.Int32)">
+            <summary>
+            Modificando el método AddTask, logramos que la clase Building tenga el control de todas
+            las tasks(le agregamos la responsabilidad de agregarlas), por lo cual estamos 
+            hablando de una composición. Con todo esto nos aseguramos de que cuando se quieran agregar tasks
+            al building, sea este el mismo que las crea.
+            
+            </summary>
+        </member>
         <member name="M:Full_GRASP_And_SOLID.Library.Building.GetProductionCost">
             <summary>
             Creamos método GetProductionCost
@@ -25,13 +34,13 @@
         </member>
         <member name="T:Full_GRASP_And_SOLID.Library.Empty">
             <summary>
-            Creamos la excepción que intervendrá cuando no se encuentren tasks.
+            Creamos la excepción que intervendrá cuando no se encuentren tasks
             </summary>
         </member>
         <member name="T:Full_GRASP_And_SOLID.Library.FilePrinter">
             <summary>
             Independizamos el poder imprimir en archivos, creando la clase FilePrinter, que hereda de la interfaz
-            IPrinter. (Patrón utilizado: Polimorfismo)
+            IPrinter (Patrón utilizado: Polimorfismo).
             </summary>
         </member>
         <member name="T:Full_GRASP_And_SOLID.Library.IPrinter">
