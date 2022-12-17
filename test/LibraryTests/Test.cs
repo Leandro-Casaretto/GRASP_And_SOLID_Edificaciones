@@ -54,26 +54,24 @@ namespace Tests
 
         [Test]
         public void ProductionCostTest()
-        {
-            Printer printer = new Printer();
+        {   
+            /// <summary>
+            /// Actualizamos el Test integrando la interfaz que creamos (IPrinter)
+            /// </summary>
+
+            IPrinter printer;
+            printer = new ConsolePrinter();
+
             Building tower = new Building("Tower");
             PopulateCatalogs();
 
             /// <summary>
-            /// Instanciamos las tasks
+            /// Instanciamos y agregamos las tasks (testeamos patrón implementación de Creator)
             /// </summary>
 
-            Task task1 = new Task(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
-            Task task2 = new Task(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
-            Task task3 = new Task(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
-
-            /// <summary>
-            /// Agregamos las tasks
-            /// </summary>
-
-            tower.AddTask(task1);
-            tower.AddTask(task2);
-            tower.AddTask(task3);
+            tower.AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
             
             Assert.AreEqual(tower.GetProductionCost(), 335000);
         }
@@ -85,25 +83,23 @@ namespace Tests
         [Test]
         public void DescriptionTest()
         {
-            Printer printer = new Printer();
+            /// <summary>
+            /// Actualizamos el Test integrando la interfaz que creamos (IPrinter)
+            /// </summary>
+
+            IPrinter printer;
+            printer = new ConsolePrinter();
+
             Building tower = new Building("Tower");
             PopulateCatalogs();
 
             /// <summary>
-            /// Instanciamos las tasks
+            /// Instanciamos y agregamos las tasks (testeamos patrón implementación de Creator)
             /// </summary>
 
-            Task task1 = new Task(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
-            Task task2 = new Task(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
-            Task task3 = new Task(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
-
-            /// <summary>
-            /// Agregamos las tasks
-            /// </summary>
-
-            tower.AddTask(task1);
-            tower.AddTask(task2);
-            tower.AddTask(task3);
+            tower.AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
 
             Assert.AreEqual(tower.Description,"Tower");
                 
@@ -116,7 +112,13 @@ namespace Tests
         [Test]
         public void TaskTest()
         {
-            Printer printer = new Printer();
+            /// <summary>
+            /// Actualizamos el Test integrando la interfaz que creamos (IPrinter)
+            /// </summary>
+
+            IPrinter printer;
+            printer = new ConsolePrinter();
+
             Building tower = new Building("Tower");
             PopulateCatalogs();
 
@@ -129,12 +131,12 @@ namespace Tests
             Task task3 = new Task(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
             
             /// <summary>
-            /// Agregamos las tasks
+            /// Instanciamos y agregamos las tasks (testeamos patrón implementación de Creator)
             /// </summary>
 
-            tower.AddTask(task1);
-            tower.AddTask(task2);
-            tower.AddTask(task3);
+            tower.AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
             
             Assert.AreEqual(task1.Quantity, 100);
             Assert.AreEqual(task1.Time, 120);
@@ -148,25 +150,23 @@ namespace Tests
         [Test]
         public void FinalSupply()
         {
-            Printer printer = new Printer();
+            /// <summary>
+            /// Actualizamos el Test integrando la interfaz que creamos (IPrinter)
+            /// </summary>
+
+            IPrinter printer;
+            printer = new ConsolePrinter();
+
             Building tower = new Building("Tower");
             PopulateCatalogs();
 
             /// <summary>
-            /// Instanciamos las tasks
+            /// Instanciamos y agregamos las tasks (testeamos patrón implementación de Creator)
             /// </summary>
 
-            Task task1 = new Task(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
-            Task task2 = new Task(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
-            Task task3 = new Task(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
-            
-            /// <summary>
-            /// Agregamos las tasks
-            /// </summary>
-
-            tower.AddTask(task1);
-            tower.AddTask(task2);
-            tower.AddTask(task3);
+            tower.AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
+            tower.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
             
             Assert.IsNull(tower.FinalSupply);
         }
@@ -178,8 +178,15 @@ namespace Tests
         [Test]
         public void ExceptionTest()
         {
+            /// <summary>
+            /// Actualizamos el Test integrando la interfaz que creamos (IPrinter)
+            /// </summary>
+
+            IPrinter printer;
+            printer = new ConsolePrinter();
+
             Building tower = new Building("");
-            Printer printer = new Printer();
+            PopulateCatalogs();
             
             try
             {
