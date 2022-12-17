@@ -1,5 +1,7 @@
 # PII Full GRASP and SOLID - Edificaciones
 
+![](./docs/UML.png)
+
 ## Desafío1
 
 ➡️ Agregar la responsabilidad de calcular el costo total de producir un edificio:
