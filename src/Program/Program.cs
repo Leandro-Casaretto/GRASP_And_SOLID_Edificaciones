@@ -29,7 +29,7 @@ namespace Full_GRASP_And_SOLID
 
             /// <summary>
             /// Como aplicamos el patrón Creator, ahora es el building (tower) el encargado de crear
-            /// los objetos, es decir, no permitimos que "Tower" reciba objetos creados. 
+            /// los objetos, es decir, no permitimos que "Tower" reciba objetos creados
             /// </summary>
 
             tower.AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
@@ -38,7 +38,7 @@ namespace Full_GRASP_And_SOLID
             
             /// <summary>
             /// Ahora, para la implementación en Program lo que hicimos fue, a partir de la interfaz,
-            /// instanciar tanto la impresión en consola como la impresion en archivo.
+            /// instanciar tanto la impresión en consola como la impresion en archivo
             /// </summary>
 
             IPrinter printer;
