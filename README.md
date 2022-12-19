@@ -18,7 +18,7 @@ Costo herramientas = Sumatoria de tiempo de uso x costo/hora del equipo para tod
 
 Costo total = costo materiales + costo herramientas
 
-➡️ ¿Qué patrón o principio usan para asignar esta responsabilidad? Escriban la respuesta en comentarios en el código.
+➡️ ¿Qué patrón o principio usan para asignar esta responsabilidad? Escriban la respuesta en comentarios en el código
 
 ➡️ Agregar al final de la impresión de la edificación el costo total de producción que se obtiene usando el método recién agregado.
 
