@@ -10,6 +10,6 @@ namespace Full_GRASP_And_SOLID.Library
     /// </summary>
     public interface IPrinter
     {
-        void PrintBuilding(Building building);
+        void PrintBuilding(IPrintable iprintable);
     }
 }
