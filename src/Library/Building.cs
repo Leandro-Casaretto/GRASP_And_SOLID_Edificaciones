@@ -9,7 +9,7 @@ using System.Collections;
 
 namespace Full_GRASP_And_SOLID.Library
 {
-    public class Building
+    public class Building : IPrintable
     {
         private ArrayList tasks = new ArrayList();
 

@@ -25,22 +25,9 @@
             calcular el costo (Patrón Expert)
             </summary>
         </member>
-        <member name="T:Full_GRASP_And_SOLID.Library.ConsolePrinter">
-            <summary>
-            Independizamos el poder imprimir en consola, creando la clase ConsolePrinter, 
-            que hereda de la interfaz IPrinter. 
-            (Patrón utilizado: Polimorfismo)
-            </summary>
-        </member>
         <member name="T:Full_GRASP_And_SOLID.Library.Empty">
             <summary>
             Creamos la excepción que intervendrá cuando no se encuentren tasks
-            </summary>
-        </member>
-        <member name="T:Full_GRASP_And_SOLID.Library.FilePrinter">
-            <summary>
-            Independizamos el poder imprimir en archivos, creando la clase FilePrinter, que hereda de la interfaz
-            IPrinter (Patrón utilizado: Polimorfismo).
             </summary>
         </member>
         <member name="T:Full_GRASP_And_SOLID.Library.IPrinter">
