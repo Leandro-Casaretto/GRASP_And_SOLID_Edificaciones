@@ -1,6 +1,6 @@
 # PII Full GRASP and SOLID - Edificaciones
 
-![](./docs/UML.png)
+![](./docs/UML2.png)
 
 ## Desafío1
 
