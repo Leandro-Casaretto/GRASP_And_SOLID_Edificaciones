@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Full_GRASP_And_SOLID.Library
 {
-    public class Building : IPrintable
+    public class Building : IPrintable, ICostable
     {
         private ArrayList tasks = new ArrayList();
 

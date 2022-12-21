@@ -25,9 +25,34 @@
             calcular el costo (Patrón Expert)
             </summary>
         </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.ConsolePrinter.PrintBuilding(Full_GRASP_And_SOLID.Library.IPrintable)">
+            <summary>
+            Ahora que aplicamos DIP, en vez de pasarle como parámetro un Building, le pasamos como
+            parámetro un objeto de tipo IPrintable.
+            </summary>
+        </member>
         <member name="T:Full_GRASP_And_SOLID.Library.Empty">
             <summary>
             Creamos la excepción que intervendrá cuando no se encuentren tasks
+            </summary>
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.FilePrinter.PrintBuilding(Full_GRASP_And_SOLID.Library.IPrintable)">
+            <summary>
+            Ahora que aplicamos DIP, en vez de pasarle como parámetro un Building, le pasamos como
+            parámetro un objeto de tipo IPrintable.
+            </summary>
+        </member>
+        <member name="T:Full_GRASP_And_SOLID.Library.ICostable">
+            <summary>
+            Explicacion ISP
+            </summary>
+        </member>
+        <member name="T:Full_GRASP_And_SOLID.Library.IPrintable">
+            <summary>
+            Para poder aplicar el principio de inversión de dependencias, 
+            lo que hacemos es definir la abstracción de la que queremos que ConsolePrinter, FilePrinter
+            y Building dependan. Para esto creamos la interfaz IPrintable cob el método
+            GetTextToPrint()
             </summary>
         </member>
         <member name="T:Full_GRASP_And_SOLID.Library.IPrinter">
