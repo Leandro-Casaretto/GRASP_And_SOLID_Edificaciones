@@ -84,7 +84,7 @@ namespace Full_GRASP_And_SOLID.Library
                     $"usando '{task.Equipment.Description}' durante {task.Time}\n";
             }
 
-            // Agregado por Expert
+        
             result = result + $"Costo: {this.GetProductionCost()}";
 
             return result;
